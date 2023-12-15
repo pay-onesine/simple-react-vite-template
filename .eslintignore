@@ -1,0 +1,6 @@
+dev-dist
+dist
+coverage
+cypress
+Dockerfile
+yarn.lock

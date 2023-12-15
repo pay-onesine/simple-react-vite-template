@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable", "ES2021.String"],
+        "module": "ESNext",
+        "skipLibCheck": true,
+
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+
+        /* Other */
+        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": true,
+        "incremental": true,
+        "esModuleInterop": true,
+        "paths": {
+            "@ui/*": ["./src/components/ui/*"],
+            "@icon/*": ["./src/components/icons/*"]
+        },
+        "types": ["vitest/globals", "@testing-library/jest-dom", "cypress"]
+    },
+    "include": ["src", "**/*.ts", "cypress/**/*.ts"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
